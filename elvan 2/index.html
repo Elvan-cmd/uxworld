@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Using bootstrap for responsive design -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title id="indexPageTitle"></title>
+</head>
+
+<body>
+
+    <!-- Wrap everything in a container so it's responsive -->
+    <div class="container" id='index'>
+        
+        <!-- Header section -->
+        <div class="media jumbotron">
+            <!-- Logo -->
+            <span class="media-left" id="headLogo"></span>
+            <!-- Head Text -->
+            <div class="media-body" id="headText"></div>
+        </div>
+
+        <!-- Aesthetic break -->
+        <hr class="my-4">
+            
+        <!-- Hero Image -->
+        <figure class="figure" id="headFig"></figure>
+        
+        <!-- Each card-deck is a group of 3 cards for the content groups we have -->
+        <!-- Card Deck 1 -->
+        <div class="text-center my-3 pt-5" id="deck1Title"></div>
+
+        <!-- Card deck layout is defined in html/css. Only the content (not class) is dynamically added -->
+        <div class="card-deck text-center">
+            <!-- Card Deck 1 Card 1 -->
+            <div class="card">
+                <img class="card-img-top" id="d1Card1Img">
+                <div class="card-body">
+                    <h4 class="card-title" id="d1Card1Title"></h4>
+                    <p class="card-text" id="d1Card1Text"></p>
+                </div>
+                <!-- This button not dynamically changed - opens a seperate webpage for detail of this card in seperate html file -->
+                <!-- The content of this page however is dynamically updated by Contentful -->
+                <div class="card-footer">
+                    <!-- target=blank force it to open a new tab, just a perference thing -->
+                    <a class="btn btn-primary" href="pages/deck1Card1.html" target="_blank">Read More</a>
+                </div>
+            </div>
+            <!-- Card Deck 1 Card 2 -->
+            <div class="card">
+                <img class="card-img-top" id="d1Card2Img">
+                <div class="card-body">
+                    <h4 class="card-title" id="d1Card2Title"></h4>
+                    <p class="card-text" id="d1Card2Text"></p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary" href="pages/deck1Card2.html" target="_blank">Read More</a>
+                </div>
+            </div>
+            <!-- Card Deck 1 Card 3 -->
+            <div class="card">
+                <img class="card-img-top" id="d1Card3Img">
+                <div class="card-body">
+                    <h4 class="card-title" id="d1Card3Title"></h4>
+                    <p class="card-text" id="d1Card3Text"></p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary" href="pages/deck1Card3.html" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Videos -->
+        <div class="text-center my-3 pt-5" id="deck2Title"></div>
+        <div class="card-deck text-center">
+            <div class="card">
+                <img class="card-img-top" id="d2Card1Img">
+                <div class="card-body">
+                    <h4 class="card-title" id="d2Card1Title"></h4>
+                    <p class="card-text" id="d2Card1Text"></p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary" href="pages/deck2Card1.html" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" id="d2Card2Img">
+                <div class="card-body">
+                    <h4 class="card-title" id="d2Card2Title"></h4>
+                    <p class="card-text" id="d2Card2Text"></p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary" href="pages/deck2Card2.html" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" id="d2Card3Img">
+                <div class="card-body">
+                    <h4 class="card-title" id="d2Card3Title"></h4>
+                    <p class="card-text" id="d2Card3Text"></p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary" href="pages/deck2Card3.html" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events -->
+        <div class="text-center my-3 pt-5" id="deck3Title"></div>
+        <div class="card-deck text-center">
+            <div class="card">
+                <img class="card-img-top" id="d3Card1Img">
+                <div class="card-body">
+                    <h4 class="card-title" id="d3Card1Title"></h4>
+                    <p class="card-text" id="d3Card1Text"></p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary" href="pages/deck3Card1.html" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" id="d3Card2Img">
+                <div class="card-body">
+                    <h4 class="card-title" id="d3Card2Title"></h4>
+                    <p class="card-text" id="d3Card2Text"></p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary" href="pages/deck3Card2.html" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" id="d3Card3Img">
+                <div class="card-body">
+                    <h4 class="card-title" id="d3Card3Title"></h4>
+                    <p class="card-text" id="d3Card3Text"></p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary" href="pages/deck3Card3.html" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+    </div>
+</body>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted fixed-bottom">
+    <div class="text-center text-dark p-3" id="footer"></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="main.js"></script>
+</html>
